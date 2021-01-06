@@ -7,10 +7,7 @@ const Body = Matter.Body;
 var myengine, myworld,ball1;
 var dustbin1, ground1;
 
-function preload()
-{
-	
-}
+
 
 function setup() {
 	createCanvas(800, 700);
@@ -20,10 +17,9 @@ function setup() {
 	myworld = myengine.world;
 
 	//Create the Bodies Here.
- ball1 = new Ball(56,46,55,55);
- dustbin1 = new Dustbin(600,620);
+ ball1 = new Ball(200,450,70);
+ dustbin1 = new Dustbin(650,620);
  ground1 = new Ground(400,650,800,40);
- ground1.shapeColor = color("yellow");
  Engine.run(myengine);
   
 }
